@@ -17,3 +17,4 @@ Password are hashed before they are compared and saved to the database
 Authentication must not be hard-coded into application, happens via username and password via login page.
 Viewing/using application requires log in
 Application must operate identically on all browsers (Chrome, Safari, Firefox etc)
+Must be at least three pages for the website
