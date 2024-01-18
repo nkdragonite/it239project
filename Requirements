@@ -1,1 +1,19 @@
-
+Requirements for Project
+User should not be able to view any pages unless properly authenticated
+Login verification
+Check for employee level and permissions
+Corporation has plants all over the globe, and applications should track every part at every plant.
+Parts are tracked in the database
+User belonging to one plant should only see their parts
+Program will check employee permission level
+High level employees (like C or Vice C level) see all parts
+Employee permissions
+Information about part - part number, display name, specifications, quantity at plant, vendor
+Part Class
+Privileged employees (like managers) should be able to modify inventory the web GUI
+A page that checks permission level and can modify the Part table
+Passwords must be hashed
+Password are hashed before they are compared and saved to the database
+Authentication must not be hard-coded into application, happens via username and password via login page.
+Viewing/using application requires log in
+Application must operate identically on all browsers (Chrome, Safari, Firefox etc)
