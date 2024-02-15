@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8Xb0csZXalNfRnTjqSGy7/at0/h/+WUkVOhGXxD0DgGX1be+DoGwqR2Y1DeqKSpSiQlOqpIjeqWpJK0WAZWvXA==",
+  "success": true,
+  "projectFilePath": "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj",
+  "expectedPackageFiles": [
+    "/Users/jessicagravel/.nuget/packages/microsoft.netcore.platforms/8.0.0-preview.7.23375.6/microsoft.netcore.platforms.8.0.0-preview.7.23375.6.nupkg.sha512"
+  ],
+  "logs": []
+}
