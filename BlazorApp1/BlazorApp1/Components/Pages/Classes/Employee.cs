@@ -1,20 +1,25 @@
-﻿namespace BlazorApp1.Components.Pages.Classes
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BlazorApp1.Components.Pages.Classes
 {
-	public enum Permission
-	{
-		CLevel,
-		Manager,
-		Floor
-	}
+	[Table("Employee")]
 	public class Employee
 	{
+
+		[Key, Required, Column("EMPLOYEE_ID")]
+		public uint EmployeeId { get; set; }
+		[Required, Column("EMP_FNAME")]
 		public string FName { get; set; }
-		public int EmployeeId { get; set; }
+		[Required, Column("EMP_LNAME")]
 		public string LName { get; set; }
-		public Permission Permission { get; set; }
+		[Required, Column("EMP_PERMISSION")]
+		public string Permission { get; set; }
+		[Required, Column("LOCATION_ID")]
 		public Location Location { get; set; }
+		[Required, Column("EMP_PASSWORD")]
 		private string Password { get; set; }
-		public Employee(string fname, string lname, int id, Permission permission, Location location, string password) 
+		/*public Employee(string fname, string lname, uint id, string permission, Location location, string password) 
 		{ 
 			FName = fname;
 			LName = lname;
@@ -26,7 +31,7 @@
 		public string HashPwd(string pwd)
 		{
 			return null;
-		}
+		}*/
 
 	}
 }
