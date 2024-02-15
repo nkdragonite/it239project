@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\swang\\Documents\\GitHub\\it239project\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {}
+    "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\swang\\Documents\\GitHub\\it239project\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {
+    "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\swang\\Documents\\GitHub\\it239project\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "C:\\Users\\swang\\Documents\\GitHub\\it239project\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\swang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\swang\\Documents\\GitHub\\it239project\\BlazorApp1\\BlazorApp1\\obj\\",
+        "projectPath": "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj",
+        "packagesPath": "/Users/jessicagravel/.nuget/packages/",
+        "outputPath": "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\swang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jessicagravel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
