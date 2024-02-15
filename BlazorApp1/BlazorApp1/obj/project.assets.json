@@ -2,6 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0": {
+<<<<<<< HEAD
       "BouncyCastle.Cryptography/2.2.1": {
         "type": "package",
         "compile": {
@@ -306,6 +307,9 @@
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {
+=======
+      "Microsoft.NETCore.Platforms/8.0.0-preview.7.23375.6": {
+>>>>>>> jessica-branch
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -313,6 +317,7 @@
         "runtime": {
           "lib/netstandard1.0/_._": {}
         }
+<<<<<<< HEAD
       },
       "Microsoft.NETCore.Targets/1.1.0": {
         "type": "package",
@@ -786,10 +791,13 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+=======
+>>>>>>> jessica-branch
       }
     }
   },
   "libraries": {
+<<<<<<< HEAD
     "BouncyCastle.Cryptography/2.2.1": {
       "sha512": "A6Zr52zVqJKt18ZBsTnX0qhG0kwIQftVAjLmszmkiR/trSp8H+xj1gUOzk7XHwaKgyREMSV1v9XaKrBUeIOdvQ==",
       "type": "package",
@@ -900,10 +908,17 @@
       "sha512": "6QlvBx4rdawW3AkkCsGVV+8qRLk34aknV5JD40s1hbVR18vKmT2KDl2DW83nHcPX7f4oebQ3BD1UMNCI/gkE0g==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/8.0.2",
+=======
+    "Microsoft.NETCore.Platforms/8.0.0-preview.7.23375.6": {
+      "sha512": "ym5B/aglUc4K5kkiBOOgsm7EETjenJBbMchAHvcXpfFPmrdTrhnLKC1Tvx5Qnz5kHvhloyCNTpGQvWIpxvINHg==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/8.0.0-preview.7.23375.6",
+>>>>>>> jessica-branch
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+<<<<<<< HEAD
         "buildTransitive/net8.0/Microsoft.EntityFrameworkCore.props",
         "lib/net8.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.xml",
@@ -2441,13 +2456,27 @@
         "zstdsharp.port.0.7.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+=======
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.8.0.0-preview.7.23375.6.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt"
+      ]
+>>>>>>> jessica-branch
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Abstractions >= 8.0.2",
       "MySql.EntityFrameworkCore >= 8.0.0"
+=======
+      "Microsoft.NETCore.Platforms >= 8.0.0-preview.7.23375.6"
+>>>>>>> jessica-branch
     ]
   },
   "packageFolders": {
@@ -2488,6 +2517,7 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.2, )"
@@ -2499,6 +2529,11 @@
           "MySql.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.0, )"
+=======
+          "Microsoft.NETCore.Platforms": {
+            "target": "Package",
+            "version": "[8.0.0-preview.7.23375.6, )"
+>>>>>>> jessica-branch
           }
         },
         "imports": [

@@ -22,6 +22,7 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Pages/Database.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXRhYmFzZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,3 +54,36 @@ build_metadata.AdditionalFiles.CssScope = b-nz1yiwl0um
 [/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-zjo6z1fhij
+=======
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-nz1yiwl0um
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zjo6z1fhij
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Pages/Database.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9EYXRhYmFzZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mwymlaky8v
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-qq7g8le84l
+
+[/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/Components/Pages/Location.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Mb2NhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3dv61wv9ri
+>>>>>>> jessica-branch

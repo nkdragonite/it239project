@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Rz8pBtESuynlERqYfbwlQWaOyCHhUzDp43Y8iQADaFJuf38Q23//scXUd3CrcWR99zKHl4zST1XbJFC6CBkQOg==",
   "success": true,
   "projectFilePath": "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj",
@@ -50,6 +51,13 @@
     "/Users/jessicagravel/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/jessicagravel/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
     "/Users/jessicagravel/.nuget/packages/zstdsharp.port/0.7.1/zstdsharp.port.0.7.1.nupkg.sha512"
+=======
+  "dgSpecHash": "8Xb0csZXalNfRnTjqSGy7/at0/h/+WUkVOhGXxD0DgGX1be+DoGwqR2Y1DeqKSpSiQlOqpIjeqWpJK0WAZWvXA==",
+  "success": true,
+  "projectFilePath": "/Users/jessicagravel/Desktop/IoT2/it239project/BlazorApp1/BlazorApp1/BlazorApp1.csproj",
+  "expectedPackageFiles": [
+    "/Users/jessicagravel/.nuget/packages/microsoft.netcore.platforms/8.0.0-preview.7.23375.6/microsoft.netcore.platforms.8.0.0-preview.7.23375.6.nupkg.sha512"
+>>>>>>> jessica-branch
   ],
   "logs": []
 }
