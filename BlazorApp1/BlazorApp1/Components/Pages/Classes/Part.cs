@@ -18,6 +18,8 @@ namespace BlazorApp1.Components.Pages.Classes
 		public int Quantity { get; set; }
 		[Required, Column("Part_Cost")]
 		public decimal Cost { get; set; }
+		[Required, Column("Location_Id")]
+		public int LocationID { get; set; }
 		public Part(int id, string name, string description, int vendorid, int quantity)
 		{
 			Id = id;

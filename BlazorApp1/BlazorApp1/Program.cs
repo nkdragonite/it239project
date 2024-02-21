@@ -1,4 +1,5 @@
 using BlazorApp1.Components;
+using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp1
 {
@@ -11,7 +12,16 @@ namespace BlazorApp1
 			// Add services to the container.
 			builder.Services.AddRazorComponents()
 				.AddInteractiveServerComponents();
-
+			/*builder.Services.AddDbContext<AppDbContext>(options
+=>
+			{
+				options.UseMySQL(builder.Configuration
+				.GetConnectionString("DefaultConnection")!);
+#if DEBUG
+				options.EnableSensitiveDataLogging();
+				options.EnableDetailedErrors();
+#endif
+			});*/
 			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
