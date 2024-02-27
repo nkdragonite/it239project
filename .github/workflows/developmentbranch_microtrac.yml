@@ -54,4 +54,4 @@ jobs:
           app-name: 'microtrac'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E3D8845A8EE43BEB34BAC2978B59962 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_845168504CF24684B045F369C976328C }}
