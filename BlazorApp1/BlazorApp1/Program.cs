@@ -5,6 +5,10 @@ namespace BlazorApp1
 {
 	public class Program
 	{
+		public string Username { get; set; }
+		public int Location { get; set; }
+		public string Permission { get; set; }
+		
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
@@ -12,16 +16,18 @@ namespace BlazorApp1
 			// Add services to the container.
 			builder.Services.AddRazorComponents()
 				.AddInteractiveServerComponents();
-			/*builder.Services.AddDbContext<AppDbContext>(options
+			builder.Services.AddDbContext<AppDbContext>(options
 =>
 			{
-				options.UseMySQL(builder.Configuration
+				options.UseSqlServer(builder.Configuration
 				.GetConnectionString("DefaultConnection")!);
+				//options.UseLazyLoadingProxies();
 #if DEBUG
 				options.EnableSensitiveDataLogging();
 				options.EnableDetailedErrors();
+			
 #endif
-			});*/
+			});
 			var app = builder.Build();
 
 			// Configure the HTTP request pipeline.

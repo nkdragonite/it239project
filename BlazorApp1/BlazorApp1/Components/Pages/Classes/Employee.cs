@@ -8,17 +8,32 @@ namespace BlazorApp1.Components.Pages.Classes
 	{
 
 		[Key, Required, Column("EMPLOYEE_ID")]
-		public uint EmployeeId { get; set; }
-		[Required, Column("EMP_FNAME")]
+		public string EmployeeId { get; set; }
+		
+		[Column("EMPLOYEE_LEVEL")]
+		public string Level { get; set; }
+		
+		[Column("EMPLOYEE_FN")]
 		public string FName { get; set; }
-		[Required, Column("EMP_LNAME")]
+		
+		[Column("EMPLOYEE_LN")]
 		public string LName { get; set; }
-		[Required, Column("EMP_PERMISSION")]
-		public string Permission { get; set; }
-		[Required, Column("LOCATION_ID")]
-		public Location Location { get; set; }
-		[Required, Column("EMP_PASSWORD")]
+		
+		//[ForeignKey("LOCATION_ID"), Column("LOCATION_ID")]
+		[Column("LOCATION_ID")]
+		public string E_Location_Id { get; set; }
+		//public Location LocationId { get; set; }
+		
+		[Column("EMPLOYEE_PASSWORD")]
 		private string Password { get; set; }
+
+		[Column("EMPLOYEE_EMAIL")] 
+		private string Employee_Email { get; set; }
+		
+		[Column("SALT")]
+		private string Salt { get; set; }
+		
+		
 		/*public Employee(string fname, string lname, uint id, string permission, Location location, string password) 
 		{ 
 			FName = fname;

@@ -7,8 +7,9 @@ namespace BlazorApp1.Components.Pages.Classes
 	public class Vendor
 	{
 		[Key, Required, Column("Vendor_Id")]
-		public int VendorId { get; set; }
-		[Required, Column("Vendor_Name")]
+		public string VendorId { get; set; }
+		
+		[Column("Vendor_Name")]
 		public string VendorName { get; set;}
 	}
 }

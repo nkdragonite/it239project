@@ -4,7 +4,7 @@ namespace BlazorApp1.Components.Pages
 {
 	public partial class Database
 	{
-		/*[Inject]
-		private AppDbContext DbContext { get; set; }*/
+		[Inject]
+		private AppDbContext DbContext { get; set; }
 	}
 }
