@@ -6,21 +6,15 @@
 
 
 <PageTitle>Database</PageTitle>
-<div id = "heading-container">
-    <!---<label for="locations">Choose a Location:</label>
-<select @bind="SelectedLocation" name="locations" id="locations">
-    <option value="north-east">North-East</option>
-    <option value="north-west">North-West</option>
-    <option value="south-east">South-East</option>
-    <option value="south-west">South-West</option>
-    <option value="china">China</option>
-</select>-->
+<div id="heading-container">
 </div>
 <h1>Database</h1>
 <table>
     <thead>
     <tr>
+ 
         <th>Id</th>
+        <th>Name</th>
         <th>Quantity</th>
         <th>Cost</th>
         <th>VendorID</th>
@@ -29,33 +23,13 @@
     </thead>
     <tbody>
     <h3>South-West</h3>
-
     @foreach (Part part in DbContext.Parts) 
-    {
-        //if (part.LocationID == "1")
-      //  {
-            <tr>
-                <td>@part.Id</td>
-              
-                <td><input type="text" @bind="part.Quantity"/></td>
-                <td><input type="text" @bind="part.Cost"/></td>
-                <td><input type="text" @bind="part.VendorID"/></td>
-                <td><input type="text" @bind="part.LocationID"/></td>
-            </tr>
-        //}
-    }
-      <h3>North-West</h3>
-    @foreach (Part part in DbContext.Parts) 
-    {
-        if (part.LocationID == "2")
+
+        if (part.LocationID == "101")
         {
-
-
-            //int locationId = LocationNameToID(SelectedLocation);
-            //if (part.LocationID == locationId)
             <tr>
                 <td>@part.Id</td>
-               
+                <td><input type="text" @bind="part.Name"/></td>
                 <td><input type="text" @bind="part.Quantity"/></td>
                 <td><input type="text" @bind="part.Cost"/></td>
                 <td><input type="text" @bind="part.VendorID"/></td>
@@ -63,81 +37,160 @@
             </tr>
         }
     }
-      <h3>Nort-East</h3>
-    @foreach (Part part in DbContext.Parts)
-    {
-        if (part.LocationID == "3")
-        {
+    </tbody>
+</table>
 
-
-            //int locationId = LocationNameToID(SelectedLocation);
-            //if (part.LocationID == locationId)
+        <h3>North-West</h3>
+        <table>
+            <thead>
             <tr>
-                <td>@part.Id</td>
-            
-                <td><input type="text" @bind="part.Quantity"/></td>
-                <td><input type="text" @bind="part.Cost"/></td>
-                <td><input type="text" @bind="part.VendorID"/></td>
-                <td><input type="text" @bind="part.LocationID"/></td>
+         
+                <th>Id</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Cost</th>
+                <th>VendorID</th>
+                <th>LocationID</th>
             </tr>
-        }
-    }
-    <h3>South-East</h3>
-
-    @foreach (Part part in DbContext.Parts)
-    {
-        if (part.LocationID == "4")
+            </thead>
+            <tbody>
+        @foreach (Part part in DbContext.Parts) 
         {
+            if (part.LocationID == "102")
+            {
 
-
-            //int locationId = LocationNameToID(SelectedLocation);
-            //if (part.LocationID == locationId)
-            <tr>
-                <td>@part.Id</td>
-          
-                <td><input type="text" @bind="part.Quantity"/></td>
-                <td><input type="text" @bind="part.Cost"/></td>
-                <td><input type="text" @bind="part.VendorID"/></td>
-                <td><input type="text" @bind="part.LocationID"/></td>
-            </tr>
+                <tr>
+                    <td>@part.Id</td>
+                    <td><input type="text" @bind="part.Name"/></td>
+                    <td><input type="text" @bind="part.Quantity" /></td>
+                    <td><input type="text" @bind="part.Cost" /></td>
+                    <td><input type="text" @bind="part.VendorID" /></td>
+                    <td><input type="text" @bind="part.LocationID" /></td>
+                </tr>
+            }
         }
-    }
-    <h3>Taiwan</h3>
+        </tbody>
+        </table>
 
-    @foreach (Part part in DbContext.Parts) 
-    {
-        if (part.LocationID == "5")
-        {
-
-
-            //int locationId = LocationNameToID(SelectedLocation);
-            //if (part.LocationID == locationId)
-            <tr>
-                <td>@part.Id</td>
-    
-                <td><input type="text" @bind="part.Quantity"/></td>
-                <td><input type="text" @bind="part.Cost"/></td>
-                <td><input type="text" @bind="part.VendorID"/></td>
-                <td><input type="text" @bind="part.LocationID"/></td>
-            </tr>
-        }
-    }
+    <h3>Nort-East</h3>
+<table>
+    <thead>
     <tr>
-        <td>@newPart.Id</td>
-
-        <td><input type="text" @bind="newPart.Quantity"/></td>
-        <td><input type="text" @bind="newPart.Cost"/></td>
-        <td><input type="text" @bind="newPart.VendorID"/></td>
-        <td><input type="text" @bind="newPart.LocationID"/></td>
-
+         
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+        <th>VendorID</th>
+        <th>LocationID</th>
     </tr>
+    </thead>
+    <tbody>
+    @foreach (Part part in DbContext.Parts) 
+    {
+        if (part.LocationID == "103")
+        {
+            <tr>
+                <td>@part.Id</td>
+                <td><input type="text" @bind="part.Name"/></td>
+                <td><input type="text" @bind="part.Quantity" /></td>
+                <td><input type="text" @bind="part.Cost" /></td>
+                <td><input type="text" @bind="part.VendorID" /></td>
+                <td><input type="text" @bind="part.LocationID" /></td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+
+        <h3>South-East</h3>
+<table>
+    <thead>
+    <tr>
+         
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+        <th>VendorID</th>
+        <th>LocationID</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (Part part in DbContext.Parts) 
+        {
+            if (part.LocationID == "104")
+            {
+                <tr>
+                    <td>@part.Id</td>
+                    <td><input type="text" @bind="part.Name"/></td>
+                    <td><input type="text" @bind="part.Quantity" /></td>
+                    <td><input type="text" @bind="part.Cost" /></td>
+                    <td><input type="text" @bind="part.VendorID" /></td>
+                    <td><input type="text" @bind="part.LocationID" /></td>
+                </tr>
+            }
+        }
+          </tbody>
+        </table>
+
+        <h3>Taiwan</h3>
+<table>
+    <thead>
+    <tr>
+         
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+        <th>VendorID</th>
+        <th>LocationID</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (Part part in DbContext.Parts) 
+        {
+            if (part.LocationID == "105")
+            {
+                <tr>
+                    <td>@part.Id</td>
+                    <td><input type="text" @bind="part.Name"/></td>
+                    <td><input type="text" @bind="part.Quantity" /></td>
+                    <td><input type="text" @bind="part.Cost" /></td>
+                    <td><input type="text" @bind="part.VendorID" /></td>
+                    <td><input type="text" @bind="part.LocationID" /></td>
+                </tr>
+            }
+        }
+        </tbody>
+                </table>
+
+<table>
+    <thead>
+    <tr>
+         
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+        <th>VendorID</th>
+        <th>LocationID</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@newPart.Id</td>
+            <td><input type="text" @bind="newPart.Name"/></td>
+            <td><input type="text" @bind="newPart.Quantity" /></td>
+            <td><input type="text" @bind="newPart.Cost" /></td>
+            <td><input type="text" @bind="newPart.VendorID" /></td>
+            <td><input type="text" @bind="newPart.LocationID" /></td>
+      
+        </tr>
     </tbody>
 </table>
 <button @onclick="SaveChanges">Save Changes</button>
 @code {
-
-    
-    private string SelectedLocation { get; set; }
     Part newPart = new();
 
     private async Task SaveChanges()
@@ -147,17 +200,6 @@
         await DbContext.SaveChangesAsync();
         newPart = new Part();
     }
-
-    //method to convert location name to its corresponding id
-    /*private int LocationNameToID(string locationName)
-    {
-        var location = DbContext.Locations.FirstOrDefault
-            (i => i.LocationName.Equals(locationName, StringComparison.OrdinalIgnoreCase));
-
-        return location.LocationID;
-
-
-    }*/
 
 
 }

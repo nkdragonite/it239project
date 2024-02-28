@@ -4,7 +4,7 @@
 @using BlazorApp1.Components.Pages.Classes
 
 <PageTitle>Database</PageTitle>
-<div id = "heading-container">
+<!--<div id = "heading-container">
 <h1>Database</h1>
 <label for="locations">Choose a Location:</label>
 <select name="locations" id="locations">
@@ -14,10 +14,11 @@
     <option value="south-west">South-West</option>
     <option value="china">China</option>
 </select>
-</div>
+</div> -->
 <table>
     <thead>
     <tr>
+        <th>Name</th>
         <th>Id</th>
         <th>Quantity</th>
         <th>Cost</th>
@@ -29,6 +30,7 @@
     @foreach (Part part in DbContext.Parts)
     {
         <tr>
+            <td>@part.Name</td>
             <td>@part.Id</td>
             <td>@part.Quantity</td>
             <td>@part.Cost</td>

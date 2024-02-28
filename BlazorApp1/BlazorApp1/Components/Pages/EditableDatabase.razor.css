@@ -18,8 +18,7 @@
 
 h1 {
     padding-bottom: 40px;
-    float: right;
-    margin-right: 650px;
+
     text-align: center;
 
 }
@@ -41,8 +40,12 @@ table {
 thead {
     height: 40px;
 }
-
-th, td {
+table input {
+    width: 90%; 
+    margin: 0 auto;
+    display: block;
+}
+th, td{
     text-align: left;
     padding: 8px;
     border: 1px solid #ddd;

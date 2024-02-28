@@ -8,6 +8,9 @@ namespace BlazorApp1.Components.Pages.Classes
 	{
 		[Key, Required, Column("Part_Id")]
 		public int Id { get; set; }
+		
+		[Column("Part_Name")]
+		public string Name { get; set; }
 	
 		[Column("Vendor_Id")]
 		public string VendorID { get; set; }
