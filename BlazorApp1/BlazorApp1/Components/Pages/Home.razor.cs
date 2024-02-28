@@ -13,6 +13,7 @@ namespace BlazorApp1.Components.Pages
 		public Employee Employee { get; set; }
 		[Inject]
 		private AppDbContext DbContext { get; set; }
+		public string TestString { get; set; }
 		public static string HashPwd(string password, string salt)
 		{
 			SHA384 sha384 = SHA384.Create();
@@ -24,20 +25,23 @@ namespace BlazorApp1.Components.Pages
 		{
 			foreach(Employee emp in DbContext.Employees)
 			{
-				if(emp.FName + " " + emp.LName == Username)
+				if(emp.EmployeeId == Username)
 				{
 					if(emp.Password == HashPwd(Password, emp.Salt))
 					{
 						Employee = emp;
+						TestString = "correct";
 						return "correct";
 					}
 					else
 					{
-						return "incorrect";
+                        TestString = "incorrect";
+                        return "incorrect";
 					}
 				}
 			}
-			return "no user";
+            TestString = "no user";
+            return "no user";
 		}
 	}
 }
