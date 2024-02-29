@@ -8,15 +8,16 @@
         <input id="username" @bind="Username"/>
          <label id="password_label" for="password">Password</label>
         <input id="password" @bind="Password" />
-        <button @onclick="() => LoginNavigate()">Log In</button>
+        <button type="submit" @onclick="() => LoginNavigate()">Log In</button>
         
 
     </div>
-    <p @bind="TestString">Test</p>
+    <p id="test" @bind="TestString">Test</p>
 @code{
 
-    private void LoginNavigate()
+    private async void LoginNavigate()
     {
+        Console.WriteLine("LoginNavigate() called");
         string result = LogIn();
         if(result == "correct")
         {

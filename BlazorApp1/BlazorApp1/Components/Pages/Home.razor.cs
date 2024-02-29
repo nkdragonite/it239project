@@ -23,6 +23,7 @@ namespace BlazorApp1.Components.Pages
 		}
 		public string LogIn()
 		{
+			Console.WriteLine("LogIn() called");
 			foreach(Employee emp in DbContext.Employees)
 			{
 				if(emp.EmployeeId == Username)
