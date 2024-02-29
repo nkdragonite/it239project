@@ -188,15 +188,25 @@
 </table>
 <button @onclick="SaveChanges">Save Changes</button>
 @code {
-    Part newPart = new();
-
-    private async Task SaveChanges()
+    public Part newPart = new();
+    public string NewName { get; set; }
+    public string NewQuantity { get; set; }
+    public decimal NewCost { get; set; }
+    public string NewVendor { get; set; }
+    public string NewLocation { get; set; }
+    protected override void OnInitialized()
     {
         newPart.Id = DbContext.Parts.Max(p => p.Id) + 1;
-        DbContext.Parts.Add(newPart);
-        await DbContext.SaveChangesAsync();
-        newPart = new Part();
     }
-
+    public void SaveChanges()
+    {
+        newPart.Name = NewName;
+        newPart.Quantity = NewQuantity;
+        newPart.Cost = NewCost;
+        newPart.VendorID = NewVendor;
+        newPart.LocationID = NewLocation;
+        DbContext.Parts.Add(newPart);
+        DbContext.SaveChanges();
+    }
 
 }
